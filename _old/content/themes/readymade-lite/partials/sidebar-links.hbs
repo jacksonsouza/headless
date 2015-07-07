@@ -1,0 +1,42 @@
+<!-- START DISABLED CODE
+=======================================================
+The following is an example of a simple HTML list. Each
+<li> element is a list item, or menu item in the
+sidebar.There is also a second HTML list embedded inside
+of the "categories" primary list menu item. This is where
+you can add or remove links to the "Categories" (tag pages)
+
+You can add, remove, or alter links as desired.
+=======================================================
+-->
+
+<!-- Theme specific links -->
+<nav class="main-nav">
+  <!-- Primary list -->
+  <ul>
+
+    <!--
+    [WARNING: Altering the class name of this element will cause the
+    'About' profile overlay to cease working]
+
+    <li class="profile-trigger"><span>About</span></li>
+
+    -->
+
+    <li class="home"><a href="/about">About</a></li>
+
+    <!-- Categories sub-menu -->
+    <li class="categories">
+      <span><a href="/">Posts</a></span>
+      <ul>
+        <li><a href="http://headfullofnothing.com/tag/projects/">Projects</a></li>
+        <li><a href="http://headfullofnothing.com/tag/longform/">Longform</a></li>
+        <li><a href="http://headfullofnothing.com/tag/dev/">Development Logs</a></li>
+      </ul>
+    </li>
+
+    <li class="home"><a href="/work">Portfolio</a></li>
+    <li><a href="https://github.com/jacksonsouza" target="_blank"><img src="{{asset 'github.png'}}"></a></li>
+
+  </ul>
+</nav>

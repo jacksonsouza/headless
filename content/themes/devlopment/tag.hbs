@@ -1,0 +1,58 @@
+{{!< default}}
+
+<div class="results-wrap">
+  <div class="results">
+    <h2>Posts tagged <span>{{tag.name}}</span></h2>
+  </div>
+</div>
+
+{{#foreach posts}}
+  <article class="post type-text" id="{{id}}">
+    <div class="caption clearfix rte">
+      <h1>
+        <a class="post-title" href="{{url}}">{{title}}</a>
+      </h1>
+
+      {{content words="100"}}
+    </div>
+
+    <aside class="metadata clearfix">
+
+      <!-- Post tags -->
+      {{#if tags}}
+        <div class="tags clearfix">
+          {{#foreach tags}}
+            <a href="{{url}}">{{name}}</a>
+          {{/foreach}}
+        </div>
+      {{/if}}
+
+      <!-- Post Date -->
+      <a class="timestamp" href="{{url}}">{{date published_at format="MMMM DD, YYYY"}}</a>
+
+      <!-- Post share widget -->
+      <div class="share">
+        <span class="tooltip">
+            <span>Share this</span>
+        </span>
+
+        <span class="toggle"></span>
+
+        <div class="pxu-share pop-up-box">
+          <h4>Share this</h4>
+          <div class="links">
+            <a class="facebook" href="https://www.facebook.com/sharer.php?u={{url absolute='true'}}" target="_new">Facebook<span class="icon"></span></a>
+            <a class="twitter" href="https://twitter.com/intent/tweet?url={{url absolute='true'}}" target="_new">Twitter<span class="icon"></span></a>
+            <a class="pinterest" href="" target="_new" title="">Pinterest<span class="icon"></span></a>
+            <a class="google-plus" href="https://plusone.google.com/_/+1/confirm?hl=en&amp;url={{url absolute='true'}}" target="_new">Google<span class="icon"></span></a>
+          </div>
+          <div class="close"></div>
+        </div>
+      </div>
+
+    </aside>
+
+  </article>
+{{/foreach}}
+
+{{pagination}}
