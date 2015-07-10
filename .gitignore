@@ -1,5 +1,8 @@
-./_old
-./content/apps
-./content/data
-./content/images
-./node_modules
+.DS_Store?
+.DS_Store
+_old/
+content/apps/
+content/data/
+content/plugins/
+content/images/
+node_modules/
