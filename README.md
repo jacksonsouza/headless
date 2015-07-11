@@ -1,66 +1,114 @@
-# Ghunt - Jumpstart Your Ghost Theme
+<a href="https://github.com/TryGhost/Ghost"><img src="https://cloud.githubusercontent.com/assets/120485/6622822/c4c639fe-c8e7-11e4-9e64-5bec06c8b4c3.png" alt="Ghost" /></a>
+<a href="https://travis-ci.org/TryGhost/Ghost"><img align="right" src="https://travis-ci.org/TryGhost/Ghost.svg?branch=master" alt="Build status" /></a>
 
-Ghunt is based on Casper and utilizes the power of Grunt & Bower to jumpstart your theme development
+![Ghost Screenshot](https://cloud.githubusercontent.com/assets/120485/6626466/6dae46b2-c8ff-11e4-8c7c-8dd63b215f7b.jpg)
 
-## Features
-* Follows Ghost theme best practices
-* Develop your new theme the way you want to
-* Basic layout based on Casper with normalize.css & modernizr.js included
-* Uses sass pre processing & autoprefixer post processing for css
-* Use Bower to install a front-end framework or other assets
-* live reload to make the theme development process easier
-* usemin to minify & concat your assets
-* imagemin & svgmin to compress images
-* rev for browser caching
-* Production builds follow best practice & optimized for maximum performance
+![Ghost is a simple, powerful publishing platform that allows you to share your stories with the world.](https://cloud.githubusercontent.com/assets/120485/6626501/b2bb072c-c8ff-11e4-8e1a-2e78e68fd5c3.png)
 
-## Prerequisites
-1. Node.js
-2. Ghost
-3. Grunt
+The project is maintained by a non-profit organisation called the **Ghost Foundation**, along with an amazing group of independent [contributors](https://github.com/TryGhost/Ghost/contributors). We're trying to make publishing software that changes the shape of online journalism.
 
-## Download
-Put a fork in it or
-`git clone https://github.com/danecando/ghunt.git` this repository into your /content/themes/ folder in Ghost.
+- [Ghost.org](https://ghost.org)
+- [Latest Release](https://ghost.org/download/)
+- [Support](http://support.ghost.org/)
+- [Theme Docs](http://themes.ghost.org)
+- [Contributing Guide](https://github.com/TryGhost/Ghost/blob/master/CONTRIBUTING.md)
+- [Feature Requests](http://ideas.ghost.org/)
+- [Dev Blog](http://dev.ghost.org)
 
-## Install
-Run `npm install` in the Ghunt directory to install node modules and bower dependencies.
 
-## Configure
-* Add the port your ghost blogging is running on in Gruntfile.js for development
+# Quick Start Install
 
-## Usage
-* Make sure your ghost blog is up and running before you use `grunt start` for development
-* Easily add assets to your project with bower see: http://bower.io/
+Make sure you've installed Node.js - We recommend the latest **Node v0.10.x** release.
 
-## Grunt Tasks
-* `grunt update` - compiles scss & updates css files during development
-* `grunt` - default task does the same as `grunt update`
-* `grunt start` - opens your ghost blog and starts watching your files for livereload development
-* `grunt build` - compile your assets and move theme files to `release` for production
+Ghost is also compatible with **Node v0.12** and **io.js v1.2**, but please note that these versions are more likely to run into installation problems. May contain nuts. Please use the [forum](https://ghost.org/forum/installation/) for help.
 
-## Suggested Project Structure
-See: http://docs.ghost.org/themes/ for more information
-* assets
-    * css
-    * fonts
-    * images `post images are not revved for seo purposes`
-        * background `all background images used for theme via css go here to be revved`
-        * uploads / posts `should use an uploads or posts directory for non theme related images`
-    * js
-    * sass
-* partials `.hbs theme partials go here`
+1. Download the [latest release](https://ghost.org/download/) of Ghost
+1. Unzip in the location you want to install
+1. Fire up a terminal
+1. `npm install --production`
+1. Start Ghost!
+    - Local environment: `npm start`
+    - On a server: `npm start --production`
+1. `http://localhost:2368/ghost` :tada:
 
-All other theme files located in theme root
+More [install docs](http://support.ghost.org/installation/) here in case you got stuck.
 
-## Notes
-* If you don't want to use sass delete the .scss file located in `assets/sass/` & work on your css files directly at `assets/css/`
+<a name="getting-started"></a>
+# Developer Install (from git)
 
-## Contribute
-Ghunt's goal is to help quickly develop and deploy high quality Ghost themes. If you have any ideas or want
-to contribute to this project please feel free.
+Install Node.js. 
 
-## Resources
-* [Ghost Themes](http://docs.ghost.org/themes/)
-* [Grunt](http://gruntjs.com/)
-* [Bower](http://bower.io/)
+```bash
+# Node v0.10.x - full support
+# Node v0.12.x and io.js v1.2 - partial support
+#
+# Choose wisely
+```
+
+Clone :ghost:
+
+```bash
+git clone git://github.com/tryghost/ghost.git
+cd ghost
+```
+
+Install grunt. No prizes here.
+
+```bash
+npm install -g grunt-cli
+```
+
+Install Ghost. If you're running locally, use [master](https://github.com/TryGhost/Ghost/tree/master). For production, use [stable](https://github.com/TryGhost/Ghost/tree/stable). :no_entry_sign::rocket::microscope:
+
+```bash
+npm install
+```
+
+Build the things!
+
+```bash
+grunt init
+```
+
+Minify that shit for production?
+
+```bash
+grunt prod
+```
+
+Start your engines.
+
+```bash
+npm start
+
+## running production? Add --production
+```
+
+Congrats! You made it. BTW you can also just `npm install ghost` if you're into that sort of thing. NPM afficionados can also read up on using [Ghost as an NPM module](https://github.com/TryGhost/Ghost/wiki/Using-Ghost-as-an-npm-module).
+
+More general [install docs](http://support.ghost.org/installation/) here in case you got stuck.
+
+
+# Deploying Ghost
+
+The easiest way to deploy Ghost is on our official <strong><a href="https://ghost.org/pricing/">Ghost(Pro)</a></strong> hosted platform. This service funds the Ghost Foundation, which makes actively maintaining this project possible.
+
+Also, you get to save yourself a lot of wasted time and headaches by deploying a new instance of Ghost to a managed server with a global content delivery network in just a few clicks.
+
+[Other options](http://support.ghost.org/deploying-ghost/) are available if you prefer playing around with servers by yourself.
+
+
+# Staying Up to Date
+
+When a new version of Ghost comes out, you'll want to look over these [upgrade instructions](http://support.ghost.org/how-to-upgrade/) for what to do next.
+
+You can talk to other Ghost users on [our forums](https://ghost.org/forum) or chat with Ghost developers in our [public Slack team](https://ghost.org/slack/) (it's pretty awesome). We have a public meeting every Tuesday at 5:30pm London time.
+
+New releases are announced on the [dev blog](http://dev.ghost.org/tag/releases/). You can subscribe by email or follow [@TryGhost_Dev](https://twitter.com/tryghost_dev) on Twitter, if you prefer your updates bite-sized and facetious.
+
+:saxophone::turtle:
+
+
+# Copyright & License
+
+Copyright (c) 2013-2015 Ghost Foundation - Released under the [MIT license](LICENSE).
