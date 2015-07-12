@@ -1,0 +1,32 @@
+
+.header-title-content img{
+	height: auto; 
+    width: auto; 
+    max-height: 50px;
+}
+
+.header-title-content .header-text{
+	display: inline-block;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+	.header-title-content img{
+		display: none;
+	}
+
+	.header-title-content{
+		font-size: 85%;
+	}
+
+
+ 
+/* Mobile Styles */
+ 
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+ 
+/* Tablet Styles */
+ 
+}
