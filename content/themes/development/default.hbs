@@ -37,10 +37,13 @@
 
   <!-- Fonts -->
   <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="{{asset 'css/home.css'}}" />
-  <link rel="stylesheet" type="text/css" href="{{asset 'css/vend/style.css'}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset 'css/libs/style.css'}}" />
+  <link rel="stylesheet" href="{{asset 'css/libs/material.css'}}">
+
 
   <!-- Theme JS Options -->
   <script>
@@ -68,10 +71,6 @@
       <div class="navigation-toggle">
         <span></span>
       </div>
-
-        {{#if @blog.logo}}
-          <a class="logo" href="/"><img alt="{{@blog.title}}" src="{{@blog.logo}}" /></a>
-        {{/if}}
             
         {{^if @blog.logo}}
           <h1 class="fancy">
@@ -136,7 +135,8 @@
   {{ghost_foot}}
 
   <!-- Theme JS -->
-  <script src="{{asset 'js/vend/script.js'}}" type="text/javascript"></script>
+  <script src="{{asset 'js/libs/script.js'}}" type="text/javascript"></script>
+  <script src="{{asset 'js/libs/material.js'}}" type="text/javascript"></script>
 
   <!-- Google Analytics -->
   <script type="text/javascript">
