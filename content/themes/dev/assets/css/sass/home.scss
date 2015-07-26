@@ -39,11 +39,36 @@
 	}
 }
 
+.post-loop_partial::before {
+    background-image: url('../../../content/images/theme/wallpaper.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    content: '';
+    will-change: transform;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+}
+
 .post-loop_partial {
+	padding-top: 300px;
 	margin: 0 0 0 240px;
 
 	article {
-		margin: 20px auto 20px auto;
+		margin: 100px auto 100px auto;
+		.mdl-card__title {
+			height: 200px;
+
+			.mdl-card__title-text a{
+				color: white;
+				text-decoration: none;
+			}
+
+			background: url("../../../content/images/theme/welcome_card.jpg");
+		}
 	}
 }
 
