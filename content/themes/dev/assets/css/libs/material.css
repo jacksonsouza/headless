@@ -6463,7 +6463,7 @@ ul, ol {
             flex-shrink: 0; }
   .mdl-layout__drawer > .mdl-layout-title {
     line-height: 64px;
-    padding-left: 40px; }
+    padding-left: 30px; }
     @media screen and (max-width: 850px) {
       .mdl-layout__drawer > .mdl-layout-title {
         line-height: 56px;
@@ -6477,8 +6477,7 @@ ul, ol {
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
         -ms-flex-align: stretch;
-            align-items: stretch;
-    padding-top: 16px; }
+            align-items: stretch; }
     .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
       display: block;
       -webkit-flex-shrink: 0;

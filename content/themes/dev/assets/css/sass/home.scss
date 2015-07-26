@@ -1,0 +1,70 @@
+/* Global Styles */
+.navigation_partial {
+
+	.mdl-layout__drawer {
+		background-color: #27ae60;
+		position: fixed;
+	}
+
+	.mdl-navigation {
+		background-color: white;
+		// box-shadow: 0 2px 2px 0 
+		// 	rgba(0, 0, 0, 0.14), 0 3px 1px -2px 
+		// 	rgba(0, 0, 0, 0.2), 0 1px 5px 0 
+		// 	rgba(0, 0, 0, 0.12);
+	}
+
+	.fancy-header {
+		border: 5px solid black;
+		height: 75px;
+		width: auto;
+		margin: 20px;
+		background-color: white;
+
+		a {
+			text-decoration: none;
+
+			img {
+				height: auto; 
+			    width: auto; 
+			    max-height: 50px;
+			}
+
+			.header-text{
+				display: inline-block;
+				position: relative;
+				top:3px;
+			}
+		}
+	}
+}
+
+.post-loop_partial {
+	margin: 0 0 0 240px;
+
+	article {
+		margin: 20px auto 20px auto;
+	}
+}
+
+
+/* Desktop Styles */
+@media only screen and (max-width : 1024px)  {
+
+}
+
+
+/* Tablet Styles */
+@media only screen and (max-width : 850px)  {
+	.post-loop_partial {
+		margin: 0;
+	}
+ 
+ 
+}
+ 
+/* Mobile Styles */
+@media all and (max-width : 320px)  {
+
+ 
+}
