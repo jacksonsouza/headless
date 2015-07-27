@@ -1,4 +1,7 @@
 /* Global Styles */
+@font-face {
+  font-family: old-english;
+  src: url("../fonts/old-english.ttf"); }
 .navigation_partial .mdl-layout__drawer {
   background-color: #27ae60;
   position: fixed; }
@@ -21,34 +24,36 @@
       position: relative;
       top: 3px; }
 
-.post-loop_partial::before {
+.splash-absent {
+  margin: 0 0 0 240px; }
+
+.splash_partial .fancy-header {
+  border: 5px solid black;
+  height: 200px;
+  width: 40%;
+  margin: 100px auto 200px auto;
   background-image: url("../../../content/images/theme/wallpaper.jpg");
   background-size: cover;
   background-attachment: fixed;
-  content: '';
-  will-change: transform;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  position: fixed; }
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+  font-size: 100px;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  color: black; }
 
-.post-loop_partial {
-  padding-top: 300px;
-  margin: 0 0 0 240px; }
-  .post-loop_partial article {
-    margin: 100px auto 100px auto; }
-    .post-loop_partial article .mdl-card__title {
-      height: 200px;
-      background: url("../../../content/images/theme/welcome_card.jpg"); }
-      .post-loop_partial article .mdl-card__title .mdl-card__title-text a {
-        color: white;
-        text-decoration: none; }
+.post-loop_partial article {
+  margin: 100px auto 100px auto; }
+  .post-loop_partial article .mdl-card__title {
+    height: 200px;
+    background: url("../../../content/images/theme/welcome_card.jpg"); }
+    .post-loop_partial article .mdl-card__title .mdl-card__title-text a {
+      color: white;
+      text-decoration: none; }
 
 /* Desktop Styles */
 /* Tablet Styles */
 @media only screen and (max-width: 850px) {
-  .post-loop_partial {
+  .splash-absent {
     margin: 0; } }
 /* Mobile Styles */

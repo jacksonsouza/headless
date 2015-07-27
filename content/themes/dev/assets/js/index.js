@@ -1,8 +1,3 @@
-/**
- * Main JS file for Casper behaviours
- */
-
-/* globals jQuery, document */
 (function ($, undefined) {
     "use strict";
 
@@ -10,15 +5,33 @@
 
     $document.ready(function () {
 
-        var $postContent = $(".post-content");
-        $postContent.fitVids();
+        //add loader, so their is no flashing incompleteness?
+        //force (scroll) to top on page reload
 
-        $(".scroll-down").arctic_scroll();
+        var $nav = $(".navigation_partial"),
+            $splash = $(".splash_partial"),
+            $content = $(".page-content"),
+            delay = 300;
 
-        $(".menu-button, .nav-cover, .nav-close").on("click", function(e){
-            e.preventDefault();
-            $("body").toggleClass("nav-opened nav-closed");
+        $nav.hide()
+
+        $( window ).one("scroll", function() {
+            setTimeout(function() {
+                $content.addClass("splash-absent")
+                $nav.show()
+                $splash.hide()
+            }, delay)
         });
+
+        // var $postContent = $(".post-content");
+        // $postContent.fitVids();
+
+        // $(".scroll-down").arctic_scroll();
+
+        // $(".menu-button, .nav-cover, .nav-close").on("click", function(e){
+        //     e.preventDefault();
+        //     $("body").toggleClass("nav-opened nav-closed");
+        // });
 
     });
 

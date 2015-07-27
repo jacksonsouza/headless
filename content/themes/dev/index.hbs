@@ -4,12 +4,16 @@
 
 
 <main class="mdl-layout__content">
+
+    <div class="navigation_partial">
+        {{> "navigation"}}
+    </div>
+
     <div class="page-content">
-
-        <div class="navigation_partial">
-            {{> "navigation"}}
+    
+    	<div class="splash_partial">
+            {{> "splash"}}
         </div>
-
     
         <div class="post-loop_partial">
             {{> "loop"}}

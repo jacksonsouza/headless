@@ -1,4 +1,10 @@
 /* Global Styles */
+
+@font-face {
+    font-family: old-english;
+    src: url('../fonts/old-english.ttf');
+}
+
 .navigation_partial {
 
 	.mdl-layout__drawer {
@@ -39,23 +45,58 @@
 	}
 }
 
-.post-loop_partial::before {
-    background-image: url('../../../content/images/theme/wallpaper.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    content: '';
-    will-change: transform;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    position: fixed;
+.splash-absent {
+	margin: 0 0 0 240px;
 }
 
+.splash_partial {
+	.fancy-header {
+		border: 5px solid black;
+		height: 200px;
+		width: 40%;
+		margin: 100px auto 200px auto;
+
+		background-image: url('../../../content/images/theme/wallpaper.jpg');
+	    background-size: cover;
+	    background-attachment: fixed;
+
+		text-align: center;
+		vertical-align: middle;
+		line-height: 200px;   
+
+		font-size: 100px;
+		font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+		color: black;
+
+		// img {
+		// 	height: auto; 
+		//     width: auto; 
+		//     max-height:200px;
+		// }
+
+		// .header-text{
+		// 	display: inline-block;
+		// 	position: relative;
+		// 	top:3px;
+		// }
+	}
+}
+
+// .post-loop_partial::before {
+//     background-image: url('../../../content/images/theme/wallpaper.jpg');
+//     background-size: cover;
+//     background-attachment: fixed;
+//     content: '';
+//     will-change: transform;
+//     z-index: -1;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     top: 0;
+//     position: fixed;
+// }
+
 .post-loop_partial {
-	padding-top: 300px;
-	margin: 0 0 0 240px;
 
 	article {
 		margin: 100px auto 100px auto;
@@ -81,11 +122,9 @@
 
 /* Tablet Styles */
 @media only screen and (max-width : 850px)  {
-	.post-loop_partial {
+	.splash-absent {
 		margin: 0;
 	}
- 
- 
 }
  
 /* Mobile Styles */
