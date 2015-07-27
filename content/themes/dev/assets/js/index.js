@@ -5,22 +5,28 @@
 
     $document.ready(function () {
 
-        //add loader, so their is no flashing incompleteness?
-        //force (scroll) to top on page reload
+        //this scroll functionality should only be active
+        //on the home page, not mobile or other pages
+        setTimeout(function() {
+            window.scrollTo(0, 0);
+        }, 0);
+
 
         var $nav = $(".navigation_partial"),
             $splash = $(".splash_partial"),
             $content = $(".page-content"),
-            delay = 300;
+            delay = 1000;
 
-        $nav.hide()
-
-        $( window ).one("scroll", function() {
-            setTimeout(function() {
-                $content.addClass("splash-absent")
-                $nav.show()
-                $splash.hide()
-            }, delay)
+        $(window).on("scroll", function() {  
+             $(window).one("scroll", function() { 
+                if(window.pageYOffset > 1) {
+                    $splash.fadeOut(delay)
+                    setTimeout(function() {
+                        $content.addClass("splash-absent")
+                        $nav.fadeIn(delay / 2)
+                    }, delay)
+                }
+            });
         });
 
         // var $postContent = $(".post-content");

@@ -20,17 +20,19 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
             mdl-layout--overlay-drawer-button">
   <div class="mdl-layout__drawer">
-    <div class="fancy-header mdl-layout-title">
-      <a href="/">
-        <img alt="{{@blog.title}}" src="../content/images/theme/color-hfon-skull.png" /> {{!-- src should be blog logo --}}
-        <div class="header-text">HFON</div> {{!-- text should be abbrv of blog title --}}
-      </a>
+  <div class="bg-overlay">
+      <div class="fancy-header mdl-layout-title">
+        <a href="/">
+          <img alt="{{@blog.title}}" src="../content/images/theme/color-hfon-skull.png" /> {{!-- src should be blog logo --}}
+          <div class="header-text">HFON</div> {{!-- text should be abbrv of blog title --}}
+        </a>
+      </div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">About</a>
+        <a class="mdl-navigation__link" href="">Essays</a>
+        <a class="mdl-navigation__link" href="">Development</a>
+        <a class="mdl-navigation__link" href="">Portfolio</a>
+      </nav>
     </div>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">About</a>
-      <a class="mdl-navigation__link" href="">Essays</a>
-      <a class="mdl-navigation__link" href="">Development</a>
-      <a class="mdl-navigation__link" href="">Portfolio</a>
-    </nav>
   </div>
 </div>
