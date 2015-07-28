@@ -5,29 +5,37 @@
 
     $document.ready(function () {
 
-        //this scroll functionality should only be active
-        //on the home page, not mobile or other pages
-        setTimeout(function() {
-            window.scrollTo(0, 0);
-        }, 0);
-
-
         var $nav = $(".navigation_partial"),
             $splash = $(".splash_partial"),
             $content = $(".page-content"),
-            delay = 1000;
+            delay = 750;
 
+        setTimeout(function() {
+            window.scrollTo(0, 0);
+            $splash.fadeIn(delay * 2);
+        }, 0);
+
+        // for scroll triggered splash
         $(window).on("scroll", function() {  
              $(window).one("scroll", function() { 
                 if(window.pageYOffset > 1) {
-                    $splash.fadeOut(delay)
-                    setTimeout(function() {
+                    $splash.fadeOut(delay, function () {
                         $content.addClass("splash-absent")
-                        $nav.fadeIn(delay / 2)
-                    }, delay)
+                        $nav.fadeIn(delay)
+                    });
                 }
             });
         });
+
+        //for auto triggered splash
+        // setTimeout(function () {
+        //     $splash.fadeOut(delay)
+        //     setTimeout(function() {
+        //         $content.addClass("splash-absent")
+        //         $nav.fadeIn(delay/2)
+        //     }, delay)
+        // }, delay)
+
 
         // var $postContent = $(".post-content");
         // $postContent.fitVids();

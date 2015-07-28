@@ -1,10 +1,4 @@
 /* Global Styles */
-
-@font-face {
-    font-family: old-english;
-    src: url('../fonts/old-english.ttf');
-}
-
 .bg-overlay {
 	width: 100%;
 	height: 100%;
@@ -22,14 +16,19 @@
 	 //    background-attachment: fixed;
 
 		position: fixed;
+		border:none;
+		box-shadow:none;
 	}
 
 	.mdl-navigation {
 		background-color: white;
-		// box-shadow: 0 2px 2px 0 
-		// 	rgba(0, 0, 0, 0.14), 0 3px 1px -2px 
-		// 	rgba(0, 0, 0, 0.2), 0 1px 5px 0 
-		// 	rgba(0, 0, 0, 0.12);
+   		box-shadow: inset 0 7px 4px -6px rgba(0, 0, 0, 0.4), inset 0 -7px 4px -6px rgba(0, 0, 0, 0.4);
+
+	    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+
+	    .mdl-navigation__link {
+	    	font-size: 14px;
+	    }
 	}
 
 	.fancy-header {
@@ -74,6 +73,8 @@
 }
 
 .splash_partial {
+	display: none;
+
 	.fancy-header {
 		border: 10px solid black;
 		height: 200px;
@@ -123,15 +124,27 @@
 
 	article {
 		margin: 100px auto 100px auto;
+
 		.mdl-card__title {
 			height: 200px;
+			background-size: cover!important;
 
-			.mdl-card__title-text a{
-				color: white;
-				text-decoration: none;
+			.mdl-card__title-text {
+				width:100%;
+				a {
+					color: white;
+					text-decoration: none;
+				}
 			}
 
-			background: url("../../../content/images/theme/welcome_card.jpg");
+			.mdl-card__title-time {
+				font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+				color: white;
+				margin-left: 30px;
+				line-height: 35px;
+				padding: 0 10px;
+				background-color:rgba(0,0,0,0.5)
+			}
 		}
 	}
 }
