@@ -17,7 +17,6 @@
 
         // for scroll triggered splash
         $(window).on("scroll", function() {  
-            console.log(window.innerWidth)
              $(window).one("scroll", function() { 
                 if(window.pageYOffset > 1 && window.innerWidth > 850) {
                     $splash.fadeOut(delay, function () {
