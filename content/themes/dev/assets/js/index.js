@@ -1,8 +1,3 @@
-/**
- * Main JS file for Casper behaviours
- */
-
-/* globals jQuery, document */
 (function ($, undefined) {
     "use strict";
 
@@ -10,15 +5,60 @@
 
     $document.ready(function () {
 
-        var $postContent = $(".post-content");
-        $postContent.fitVids();
+        var $nav = $(".navigation_partial"),
+            $splash = $(".splash_partial"),
+            $content = $(".page-content"),
+            delay = 750;
 
-        $(".scroll-down").arctic_scroll();
+        if(window.location.pathname == "/") {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+                $splash.fadeIn(delay * 2);
+            }, 0);
 
-        $(".menu-button, .nav-cover, .nav-close").on("click", function(e){
-            e.preventDefault();
-            $("body").toggleClass("nav-opened nav-closed");
-        });
+            // for scroll triggered splash
+            $(window).on("scroll", function() {  
+                 $(window).one("scroll", function() { 
+                    if(window.pageYOffset > 1 && window.innerWidth > 850) {
+                        $splash.fadeOut(delay, function () {
+                            $content.addClass("splash-absent")
+                            $nav.fadeIn(delay)
+                        });
+                    }
+                });
+            });
+        } else {
+            $splash.css("display", "none")
+            $content.addClass("splash-absent")
+            $nav.fadeIn(delay)
+        }
+
+        //validate abbreviation
+        console.log($(".header-text").text().length)
+        if ($(".header-text").text().length > 8) {
+            $(".header-text").text("BLOG")
+            $(".fancy-header .bg-overlay").text("BLOG")
+        }
+
+        //for auto triggered splash
+        // setTimeout(function () {
+        //     $splash.fadeOut(delay)
+        //     setTimeout(function() {
+        //         $content.addClass("splash-absent")
+        //         $nav.fadeIn(delay/2)
+        //     }, delay)
+        // }, delay)
+
+
+        // var $postContent = $(".post-content");
+        // $postContent.fitVids();
+
+        // $(".scroll-down").arctic_scroll();
+
+        // $(".menu-button, .nav-cover, .nav-close").on("click", function(e){
+        //     e.preventDefault();
+        //     $("body").toggleClass("nav-opened nav-closed");
+        // });
 
     });
 

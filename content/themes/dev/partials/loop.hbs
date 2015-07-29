@@ -1,25 +1,16 @@
-{{! Previous/next page links - only displayed on page 2+ }}
-<div class="extra-pagination inner">
-    {{pagination}}
-</div>
-
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 
 <article class="mdl-card mdl-shadow--2dp demo-card-wide {{post_class}}">
-  <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text"><a href="{{url}}">{{{title}}}</a></h2>
+  <div class="mdl-card__title" style="background:url('{{image}}')">
+    <h2 class="mdl-card__title-text">
+      <a href="{{url}}">{{{title}}}</a>
+      <div class="post-date mdl-card__title-time">{{date format="DD MMMM YYYY"}}</div>
+    </h2>
+
   </div>
   <div class="mdl-card__supporting-text">
-    <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="{{author.name}}" nopin="nopin" />{{/if}}
-        {{author}}
-        {{tags prefix=" on "}}
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-    </a>
+    <p>{{excerpt words="100"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
   </div>
 {{!--   <div class="mdl-card__menu">
     <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
