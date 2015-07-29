@@ -5,6 +5,11 @@
   z-index: -999;
   background-color: #27ae60; }
 
+.post-content {
+  padding: 75px 75px 30px 75px; }
+  .post-content .post-title {
+    padding-bottom: 50px; }
+
 .navigation_partial {
   display: none; }
   .navigation_partial .mdl-layout__drawer {
@@ -25,8 +30,7 @@
     background-color: white; }
     .navigation_partial .fancy-header a {
       text-decoration: none;
-      position: absolute;
-      margin: 3px 0 0 5px; }
+      margin: 2px 0 0 0; }
       .navigation_partial .fancy-header a img {
         height: auto;
         width: auto;

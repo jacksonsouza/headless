@@ -6,6 +6,14 @@
 	background-color: #27ae60;
 }
 
+.post-content {
+	padding:75px 75px 30px 75px;
+
+	.post-title {
+		padding-bottom: 50px;
+	}
+}
+
 .navigation_partial {
 	display: none;
 
@@ -35,8 +43,7 @@
 
 		a {
 			text-decoration: none;
-			position: absolute;
-   			margin: 3px 0 0 5px;
+   			margin: 2px 0 0 0;
 
 			img {
 				height: auto; 

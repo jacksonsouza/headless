@@ -6,7 +6,10 @@
 <main class="mdl-layout__content">
 
     <div class="navigation_partial">
-        {{> "navigation"}}
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+                mdl-layout--overlay-drawer-button">
+            {{> "navigation"}}
+        </div>
     </div>
 
     <div class="page-content">
