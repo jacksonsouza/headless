@@ -3,7 +3,6 @@
 	width: 100%;
 	height: 100%;
 	z-index: -999;
-	// background-color: rgba(0,0,0,0.5);
 	background-color: #27ae60;
 }
 
@@ -11,10 +10,6 @@
 	display: none;
 
 	.mdl-layout__drawer {
-		// background-image: url('../../../content/images/theme/wallpaper.jpg');
-	 //    background-size: cover;
-	 //    background-attachment: fixed;
-
 		position: fixed;
 		border:none;
 		box-shadow:none;
@@ -80,10 +75,6 @@
 		width: 40%;
 		margin: 100px auto 200px auto;
 
-		// background-image: url('../../../content/images/theme/wallpaper.jpg');
-	 	// background-size: cover;
-	 	// background-attachment: fixed;
-
 		.bg-overlay {
 			background-color: rgb(255,255,255);
 
@@ -96,28 +87,8 @@
 			color: black;
 			font-weight: bold;
 		}
-
-		// .header-text{
-		// 	display: inline-block;
-		// 	position: relative;
-		// 	top:3px;
-		// }
 	}
 }
-
-// .post-loop_partial::before {
-//     background-image: url('../../../content/images/theme/wallpaper.jpg');
-//     background-size: cover;
-//     background-attachment: fixed;
-//     content: '';
-//     will-change: transform;
-//     z-index: -1;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     top: 0;
-//     position: fixed;
-// }
 
 .post-loop_partial {
 

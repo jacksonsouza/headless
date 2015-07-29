@@ -10,22 +10,35 @@
             $content = $(".page-content"),
             delay = 750;
 
-        setTimeout(function() {
-            window.scrollTo(0, 0);
-            $splash.fadeIn(delay * 2);
-        }, 0);
+        if(window.location.pathname == "/") {
+            setTimeout(function() {
+                window.scrollTo(0, 0);
+                $splash.fadeIn(delay * 2);
+            }, 0);
 
-        // for scroll triggered splash
-        $(window).on("scroll", function() {  
-             $(window).one("scroll", function() { 
-                if(window.pageYOffset > 1 && window.innerWidth > 850) {
-                    $splash.fadeOut(delay, function () {
-                        $content.addClass("splash-absent")
-                        $nav.fadeIn(delay)
-                    });
-                }
+            // for scroll triggered splash
+            $(window).on("scroll", function() {  
+                 $(window).one("scroll", function() { 
+                    if(window.pageYOffset > 1 && window.innerWidth > 850) {
+                        $splash.fadeOut(delay, function () {
+                            $content.addClass("splash-absent")
+                            $nav.fadeIn(delay)
+                        });
+                    }
+                });
             });
-        });
+        } else {
+            $splash.css("display", "none")
+            $content.addClass("splash-absent")
+            $nav.fadeIn(delay)
+        }
+
+        //validate abbreviation
+        console.log($(".header-text").text().length)
+        if ($(".header-text").text().length > 8) {
+            $(".header-text").text("BLOG")
+            $(".fancy-header .bg-overlay").text("BLOG")
+        }
 
         //for auto triggered splash
         // setTimeout(function () {
