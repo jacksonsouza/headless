@@ -506,7 +506,7 @@ body.nav-opened .site-wrapper {
     height: 100vh;
     margin-bottom: 5rem;
     text-align: center;
-    background: #222 no-repeat center center;
+    background: #27ae60 no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -1063,9 +1063,24 @@ body:not(.post-template) .post-title {
    creating horizontal scroll - slight hack due to imperfections
    with browser width % calculations and rounding */
 .post-template .content {
-/*    overflow: hidden;*/
-    margin-top:-200px; 
+/*    overflow-x: hidden;*/
     width: 100%;
+}
+
+.post-template .content img {
+    max-width: 100%
+}
+
+@media only screen and (min-width : 900px) {
+    .post-template .content {
+        margin-top:-200px; 
+    }
+}
+
+@media only screen and (min-width : 500px) and (max-width : 900px) {
+    .post-template .content {
+        margin-top:-125px; 
+    }
 }
 
 /* Tweak the .post wrapper style */

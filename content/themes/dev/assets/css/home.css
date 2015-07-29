@@ -69,7 +69,8 @@
   margin: 100px auto 100px auto; }
   .post-loop_partial article .mdl-card__title {
     height: 200px;
-    background-size: cover !important; }
+    background-size: cover !important;
+    background-color: #27ae60; }
     .post-loop_partial article .mdl-card__title .mdl-card__title-text {
       width: 100%; }
       .post-loop_partial article .mdl-card__title .mdl-card__title-text a {

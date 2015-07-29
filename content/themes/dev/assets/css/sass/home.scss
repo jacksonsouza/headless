@@ -105,6 +105,7 @@
 		.mdl-card__title {
 			height: 200px;
 			background-size: cover!important;
+			background-color:#27ae60;
 
 			.mdl-card__title-text {
 				width:100%;
@@ -130,6 +131,7 @@
 /* Desktop Styles */
 @media only screen and (max-width : 1024px)  {
 
+
 }
 
 
@@ -147,10 +149,12 @@
     	-o-transition: all 0.5s ease;
     	transition: all 0.5s ease;
 	}
+
+
 }
  
 /* Mobile Styles */
-@media all and (max-width : 320px)  {
+@media only screen and (max-width : 320px)  {
 
  
 }
