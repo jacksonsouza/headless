@@ -1,0 +1,51 @@
+{{!< default}}
+
+{{#post}}
+
+<div class="navigation_partial">
+    <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+        {{> "navigation"}}
+    </div>
+</div>
+
+<header class="main-header post-head" style="background-image: url({{image}})">
+
+</header>
+
+<main class="content" role="main">
+    <article class="{{post_class}}">
+
+
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="post-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+{{!--             <h1 class="post-title">{{title}}</h1> --}}
+             {{content}}
+
+            <footer class="post-footer">
+            </footer>
+          </div>
+        </div>
+    </article>
+</main>
+
+<aside class="read-next">
+    {{#next_post}}
+    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+            <p>{{excerpt words="19"}}&hellip;</p>
+        </section>
+    </a>
+    {{/next_post}}
+    {{#prev_post}}
+    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+        <section class="post">
+            <h2>{{title}}</h2>
+            <p>{{excerpt words="19"}}&hellip;</p>
+        </section>
+    </a>
+    {{/prev_post}}
+</aside>
+
+{{/post}}
