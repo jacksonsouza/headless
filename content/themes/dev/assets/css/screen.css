@@ -506,7 +506,7 @@ body.nav-opened .site-wrapper {
     height: 100vh;
     margin-bottom: 5rem;
     text-align: center;
-    background: #222 no-repeat center center;
+    background: #27ae60 no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -917,7 +917,7 @@ body.nav-opened .nav {
     position: relative;
     width: 80%;
 /*    max-width: 710px;*/
-    margin: 0 0 0 15em;
+    margin: 0px auto 0 auto;
 /*    padding-bottom: 4rem;*/
     border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
@@ -1063,7 +1063,24 @@ body:not(.post-template) .post-title {
    creating horizontal scroll - slight hack due to imperfections
    with browser width % calculations and rounding */
 .post-template .content {
-    overflow: hidden;
+/*    overflow-x: hidden;*/
+    width: 100%;
+}
+
+.post-template .content img {
+    max-width: 100%
+}
+
+@media only screen and (min-width : 900px) {
+    .post-template .content {
+        margin-top:-200px; 
+    }
+}
+
+@media only screen and (min-width : 500px) and (max-width : 900px) {
+    .post-template .content {
+        margin-top:-125px; 
+    }
 }
 
 /* Tweak the .post wrapper style */

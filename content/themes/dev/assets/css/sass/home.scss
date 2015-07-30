@@ -6,6 +6,15 @@
 	background-color: #27ae60;
 }
 
+.post-content {
+	padding:75px 75px 30px 75px;
+
+	.post-title {
+		padding-bottom: 50px;
+	}
+
+}
+
 .navigation_partial {
 	display: none;
 
@@ -35,8 +44,7 @@
 
 		a {
 			text-decoration: none;
-			position: absolute;
-   			margin: 3px 0 0 5px;
+   			margin: 2px 0 0 0;
 
 			img {
 				height: auto; 
@@ -94,10 +102,12 @@
 
 	article {
 		margin: 100px auto 100px auto;
+		font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
 
 		.mdl-card__title {
 			height: 200px;
 			background-size: cover!important;
+			background-color:#27ae60;
 
 			.mdl-card__title-text {
 				width:100%;
@@ -123,6 +133,7 @@
 /* Desktop Styles */
 @media only screen and (max-width : 1024px)  {
 
+
 }
 
 
@@ -140,10 +151,12 @@
     	-o-transition: all 0.5s ease;
     	transition: all 0.5s ease;
 	}
+
+
 }
  
 /* Mobile Styles */
-@media all and (max-width : 320px)  {
+@media only screen and (max-width : 320px)  {
 
  
 }
