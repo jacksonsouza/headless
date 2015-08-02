@@ -1,51 +1,107 @@
 {{!< default}}
 
 {{#post}}
-
-<div class="navigation_partial">
-    <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
-        {{> "navigation"}}
-    </div>
-</div>
-
-<header class="main-header post-head" style="background-image: url({{image}})">
-
-</header>
-
-<main class="content" role="main">
-    <article class="{{post_class}}">
-
-
-        <div class="demo-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="post-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-{{!--             <h1 class="post-title">{{title}}</h1> --}}
-             {{content}}
-
-            <footer class="post-footer">
-            </footer>
-          </div>
+<div class="about_page">
+    <div class="navigation_partial">
+        <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
+            {{> "navigation"}}
         </div>
-    </article>
-</main>
+    </div>
 
-<aside class="read-next">
-    {{#next_post}}
-    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
-            <p>{{excerpt words="19"}}&hellip;</p>
-        </section>
-    </a>
-    {{/next_post}}
-    {{#prev_post}}
-    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
-            <p>{{excerpt words="19"}}&hellip;</p>
-        </section>
-    </a>
-    {{/prev_post}}
-</aside>
+    <header class="main-header post-head" style="background-image: url({{image}})">
 
+    </header>
+
+    <main class="content" role="main">
+        <article class="{{post_class}}">
+
+
+            <div class="demo-container mdl-grid">
+              <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+              <div class="post-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                    
+                <div class="about_quote mdl-cell mdl-cell--12-col">
+                    <div class="about_quote-body mdl-cell mdl-cell--12-col">
+                        As the geometer, who endeavours<br>
+                        To square the circle, and discovers not,<br>
+                        By taking thought, the principle he wants,<br><br>
+
+                        Even such was I at that [beatific] apparition;<br>
+                        I wished to see how the image to the circle<br>
+                        Conformed itself, and how it there finds place.<br><br>
+
+                        <span class="about_quote-author">Canto XXXIII, Paradiso, Dante Aligheri</span>
+                    </div>
+
+                </div>
+
+                <div class="about_content-container mdl-cell--12-col">   
+                    {{content}}
+
+                    <div class="about_content-resource-grid mdl-grid">
+                        <h4 class="mdl-cell mdl-cell--12-col">Books</h4>
+                        <div class="book-resource-img mdl-cell mdl-cell--6-col">
+                            <img src= "../content/images/theme/geb.jpg">
+                        </div>
+                        <div class="book-resource-img mdl-cell mdl-cell--6-col">
+                            <img src= "../content/images/theme/a-dance-with.jpg">
+                        </div>
+                    </div>
+
+                    <div class="about_content-resource-grid mdl-grid">
+                        <h4 class="mdl-cell mdl-cell--12-col">Music</h4>
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <iframe width="560" height="400" src="//www.youtube.com/embed/mb6Jc4juSF8" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="560" height="400" src="//www.youtube.com/embed/5VrDvHeh9sA" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="about_content-resource-grid mdl-grid">
+                        <h4 class="mdl-cell mdl-cell--12-col">Art</h4>
+                        <div class="art-resource-img mdl-cell mdl-cell--6-col">
+                            <a href="http://rebel8.com/blogs/giant"><img src= "../content/images/theme/giant.jpg">
+                        </div>
+                        <div class="art-resource-img mdl-cell mdl-cell--6-col">
+                            <a href="https://en.wikipedia.org/wiki/Paul_Laffoley"><img src= "../content/images/theme/laffoley.jpg"></a>
+                        </div>
+                    </div>
+
+                    <h3 class="buffer">"Head Full of Nothing"?</h3>
+                
+                    <iframe width="560" height="24" src="//www.youtube.com/embed/-l1eYwg22V4?start=312&autohide=0" frameborder="0" allowfullscreen></iframe>
+
+                    <p>I remember singing this one with some friends at a festival in Santa Barbara. Here's a <a href="https://www.youtube.com/watch?v=3iPcHt1xUuk">video</a> of the same festival in that, if you squint hard enough, the singer looks just like my father. Dad could pull it off, I have faith.</p>
+
+
+                     <p>A note: The development logs are a peek inside my head, and my brain is certainly no Hemingway. In this regard, I often move quickly from one project to the next so, please excuse spelling and non-coherency. I often throw hasty sketches and example code on these as well, in hope I can one day chuckle at them with my wizard beard and coke bottle glasses. Rest assured that all portfolio and longform items can be held to a higher standard. Thank you & enjoy!</p>
+
+                    <p>This blog is hosted on the Ghost.js platform. The theme is custom and for download <a href="/">here</a>.</p>
+                </div>
+
+                <footer class="post-footer">
+                </footer>
+              </div>
+            </div>
+        </article>
+    </main>
+
+    <aside class="read-next">
+        {{#next_post}}
+        <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+            <section class="post">
+                <h2>{{title}}</h2>
+                <p>{{excerpt words="19"}}&hellip;</p>
+            </section>
+        </a>
+        {{/next_post}}
+        {{#prev_post}}
+        <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
+            <section class="post">
+                <h2>{{title}}</h2>
+                <p>{{excerpt words="19"}}&hellip;</p>
+            </section>
+        </a>
+        {{/prev_post}}
+    </aside>
+</div>
 {{/post}}

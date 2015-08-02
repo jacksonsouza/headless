@@ -10,6 +10,26 @@
   .post-content .post-title {
     padding-bottom: 50px; }
 
+.about_page .post-content {
+  margin-top: 75px !important; }
+.about_page .book-resource-img img {
+  width: auto;
+  max-height: 300px; }
+.about_page .art-resource-img img {
+  width: auto;
+  max-height: 300px; }
+.about_page .buffer {
+  padding-top: 100px; }
+.about_page .about_quote {
+  width: 100%;
+  font-size: 14px;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-style: italic;
+  font-weight: 100; }
+  .about_page .about_quote .about_quote-body {
+    text-align: center;
+    margin: 0px auto 0 auto; }
+
 .navigation_partial {
   display: none; }
   .navigation_partial .mdl-layout__drawer {
@@ -86,6 +106,9 @@
       background-color: rgba(0, 0, 0, 0.5); }
 
 /* Desktop Styles */
+@media only screen and (min-width: 850px) {
+  .about_quote {
+    padding-bottom: 100px; } }
 /* Tablet Styles */
 @media only screen and (max-width: 850px) {
   .navigation_partial {
@@ -96,5 +119,8 @@
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-    transition: all 0.5s ease; } }
+    transition: all 0.5s ease; }
+
+  .about_quote {
+    padding-bottom: 30px; } }
 /* Mobile Styles */
