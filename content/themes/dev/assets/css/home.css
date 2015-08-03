@@ -30,6 +30,30 @@
     text-align: center;
     margin: 0px auto 0 auto; }
 
+.portfolio_page .material-icons {
+  position: fixed;
+  padding-top: 10px; }
+.portfolio_page .navigation_partial {
+  margin-top: -100px; }
+.portfolio_page .content {
+  margin-top: 100px !important;
+  padding-top: 200px; }
+.portfolio_page .top-card {
+  margin-top: 100px !important; }
+.portfolio_page .post-head {
+  position: fixed; }
+.portfolio_page .card-small {
+  min-height: 100px; }
+.portfolio_page .mdl-card {
+  width: 70%;
+  margin: 0 auto 75px auto; }
+  .portfolio_page .mdl-card .small-title {
+    height: 65px !important; }
+  .portfolio_page .mdl-card .mdl-card__title {
+    height: 600px;
+    background-size: cover !important;
+    background-color: #27ae60; }
+
 .navigation_partial {
   display: none; }
   .navigation_partial .mdl-layout__drawer {

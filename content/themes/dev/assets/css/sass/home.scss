@@ -50,6 +50,50 @@
 	}
 }
 
+.portfolio_page {
+
+	.material-icons {
+		position: fixed;
+		padding-top: 10px;
+	}
+
+	.navigation_partial{
+		margin-top: -100px;
+	}
+
+	.content {
+	    margin-top: 100px!important;
+	    padding-top: 200px;
+	}
+
+	.top-card {
+		margin-top: 100px!important;
+	}
+
+	.post-head {
+		position: fixed;
+	}
+
+	.card-small {
+		min-height: 100px;
+	}
+
+	.mdl-card {
+		width: 70%;
+		margin: 0 auto 75px auto;
+
+		.small-title {
+			height: 65px!important;
+		}
+
+		.mdl-card__title {
+			height: 600px;
+			background-size: cover!important;
+			background-color:#27ae60;
+		}
+	}
+}
+
 .navigation_partial {
 	display: none;
 
