@@ -61,35 +61,59 @@
 		margin-top: -100px;
 	}
 
-	.content {
-	    margin-top: 100px!important;
-	    padding-top: 200px;
-	}
-
-	.top-card {
-		margin-top: 100px!important;
-	}
-
 	.post-head {
 		position: fixed;
 	}
 
-	.card-small {
+	.content {
+	    margin-top: 100px!important;
+	    padding-top: 100px;
+	}
+
+	.head-card {
+		margin-top: 100px!important;
 		min-height: 100px;
+
+	}
+
+	.card-row {
+		width: 100%;
+		margin-right: 100px;
+		margin-left: 13px;
+
+		.port-item {
+			display: inline-block;
+			margin: 0 auto 0 auto;
+		}
 	}
 
 	.mdl-card {
-		width: 70%;
+		width: 80%;
 		margin: 0 auto 75px auto;
+		background-color:rgba(255,255,255,0);
 
 		.small-title {
-			height: 65px!important;
+			height: 200px!important;
+			background-color:rgba(0,0,0,0.5);
+
+			.mdl-card__title-text {
+				color: white;
+				font-size: 50px;
+				margin: 0 auto 30px auto;
+				font-weight: bold;
+				border: 5px solid white;
+				padding: 10px;
+			}
 		}
 
 		.mdl-card__title {
 			height: 600px;
 			background-size: cover!important;
-			background-color:#27ae60;
+		}
+
+		.mdl-card__supporting-text {
+			background-color:rgb(255,255,255);
+			width: 100%;
 		}
 	}
 }
@@ -223,6 +247,19 @@
 @media only screen and (max-width : 850px)  {
 	.navigation_partial {
 		display: initial;
+	}
+
+	.portfolio_page {
+		.card-row {
+			width: 100%;
+			margin: 0;
+
+			.port-item {
+				width: 100%;
+				display: inline-block;
+				margin: 0 auto 0 auto;
+			}
+		}
 	}
 
 	.splash-absent {
