@@ -52,22 +52,22 @@
 
 .portfolio_page {
 
-	.material-icons {
-		position: fixed;
-		padding-top: 10px;
-	}
+	// .material-icons {
+	// 	position: fixed;
+	// 	padding-top: 10px;
+	// }
 
-	.navigation_partial{
-		margin-top: -100px;
-	}
+	// .navigation_partial{
+	// 	margin-top: -100px;
+	// }
 
-	.post-head {
-		position: fixed;
-	}
+	// .post-head {
+	// 	position: fixed;
+	// }
 
 	.content {
-	    margin-top: 100px!important;
-	    padding-top: 100px;
+	    margin-top: -425px!important;
+	    // padding-top: 100px;
 	}
 
 	.head-card {
@@ -87,8 +87,58 @@
 		}
 	}
 
+	.port-item {
+		.mdl-card {
+			.bg-overlay {
+				background-color: rgba(0, 0, 0, 0.75);
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    width: 100%;
+			    height: 350px;
+			}
+
+			.mdl-card__title {
+				z-index: 0;
+				.mdl-card__title-text {
+					// background-color:rgba(255,255,255,1);
+					font-size: 50px;
+					margin: 0 auto 100px auto;
+					padding: 20px;
+					z-index: 200;
+					a {
+						color: white;
+						text-decoration:none;
+						font-weight: bold;
+					}
+				}
+			}
+
+			.mdl-card__supporting-text {
+				border: 1px solid black;
+				border-top: none;
+				a {
+					line-height: 20px;
+				}
+				h5, .read-more{
+					padding-top: 25px;
+				}
+				p {
+					margin-bottom: 0;
+				}
+				li {
+					line-height: 20px;
+				}
+				.read-more{
+					float: right;
+					margin: 0 10px 10px 0;
+				}
+			}
+		}
+	}
+
 	.mdl-card {
-		width: 80%;
+		width: 81%;
 		margin: 0 auto 75px auto;
 		background-color:rgba(255,255,255,0);
 
@@ -107,13 +157,13 @@
 		}
 
 		.mdl-card__title {
-			height: 600px;
+			height: 350px;
 			background-size: cover!important;
 		}
 
 		.mdl-card__supporting-text {
+			width: initial;
 			background-color:rgb(255,255,255);
-			width: 100%;
 		}
 	}
 }
