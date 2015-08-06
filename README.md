@@ -1,5 +1,5 @@
 #Headless
-A "Material Design" oriented Ghost.js theme - (View Demo)[http://headfullofnothing.com/]
+A "Material Design" oriented Ghost.js theme - [View Demo](http://headfullofnothing.com/)
 
 
 Screenshot (Mobile/Desktop)
