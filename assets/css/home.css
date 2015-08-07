@@ -119,11 +119,12 @@
       .navigation_partial .fancy-header a img {
         height: auto;
         width: auto;
-        max-height: 50px; }
+        max-height: 50px;
+        margin: 0px -3px -5px 7px; }
       .navigation_partial .fancy-header a .header-text {
         display: inline-block;
         position: relative;
-        top: 10px;
+        top: 12px;
         font-weight: bold;
         font-size: 40px;
         color: black; }
@@ -180,9 +181,41 @@
   .about_quote {
     padding-bottom: 100px; } }
 /* Tablet Styles */
-@media only screen and (max-width: 850px) {
+@media only screen and (min-width: 500px) and (max-width: 850px) {
   .navigation_partial {
     display: initial; }
+
+  .home_partial .navigation_partial, .tag_partial .navigation_partial {
+    display: initial; }
+    .home_partial .navigation_partial .mdl-layout__drawer-button, .tag_partial .navigation_partial .mdl-layout__drawer-button {
+      color: rgba(0, 0, 0, 0.5); }
+
+  .portfolio_page .card-row {
+    width: 100%;
+    margin: 0; }
+    .portfolio_page .card-row .port-item {
+      width: 100%;
+      display: inline-block;
+      margin: 0 auto 0 auto; }
+
+  .splash-absent {
+    margin: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+
+  .about_quote {
+    padding-bottom: 30px; }
+
+  .portfolio_page .small-title {
+    margin-top: 100px; } }
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+  .portfolio_page .small-title {
+    margin-top: 200px; }
+  .portfolio_page .mdl-card__title-text {
+    font-size: 40px !important; }
 
   .portfolio_page .card-row {
     width: 100%;
@@ -201,4 +234,3 @@
 
   .about_quote {
     padding-bottom: 30px; } }
-/* Mobile Styles */

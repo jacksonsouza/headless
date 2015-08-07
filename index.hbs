@@ -2,25 +2,26 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 
+<div class="home_partial">
+    <main class="mdl-layout__content">
 
-<main class="mdl-layout__content">
+        <div class="navigation_partial">
+            <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
+                    mdl-layout--overlay-drawer-button">
+                {{> "navigation"}}
+            </div>
+        </div>
 
-    <div class="navigation_partial">
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer
-                mdl-layout--overlay-drawer-button">
-            {{> "navigation"}}
+        <div class="page-content">
+        
+        	<div class="splash_partial">
+                {{> "splash"}}
+            </div>
+        
+            <div class="post-loop_partial">
+                {{> "loop"}}
+            </div>
         </div>
-    </div>
-
-    <div class="page-content">
-    
-    	<div class="splash_partial">
-            {{> "splash"}}
-        </div>
-    
-        <div class="post-loop_partial">
-            {{> "loop"}}
-        </div>
-    </div>
-</main>
+    </main>
+</div>
 

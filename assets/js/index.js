@@ -8,9 +8,17 @@
         var $nav = $(".navigation_partial"),
             $splash = $(".splash_partial"),
             $content = $(".page-content"),
-            delay = 750;
+            delay = 750,
+            href = window.location.pathname;
 
-        if(window.location.pathname == "/") {
+        //had to explicitly declare this, would not grab functionality from else
+        if (href.indexOf("tag") >= 0) {
+            $splash.css("display", "none")
+            $content.addClass("splash-absent")
+            $nav.fadeIn(delay)
+        }
+
+        if(href == "/" ) {
             setTimeout(function() {
                 window.scrollTo(0, 0);
                 $splash.fadeIn(delay * 2);
@@ -39,6 +47,10 @@
             $(".header-text").text("BLOG")
             $(".fancy-header .bg-overlay").text("BLOG")
         }
+
+        //alter tag text
+        var tagText = $(".tag_partial .page-title").text().toUpperCase();
+        $(".tag_partial .page-title").text(tagText)
 
         //for auto triggered splash
         // setTimeout(function () {
