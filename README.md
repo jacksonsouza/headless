@@ -24,8 +24,7 @@ Headless's responsive design attempts to blend the prevailing "minimalism" (subt
 
 ## Theme Dependancies
 
-All included in `/assets`
-No `bower install` needed
+All included in `/assets`, no `bower install` needed
 
 + SASS: for styling
 + MDL & Casper: for theme
