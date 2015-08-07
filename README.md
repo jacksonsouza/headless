@@ -15,11 +15,13 @@ Headless's responsive design attempts to blend the prevailing "minimalism" (subt
 ## Usage
 
 + All example content is derived from my blog, in case you were wondering. This theme was designed to meet my needs as a "text-first" content creator.
-+ I have included two completely custom pages `page-about` (replacing the standard author page, lots of custom styling) & `page-work` (to support a basic portfolio) please feel free to edit their content in the HTML. On adding: for example, to add the About page to your theme, simply add a page in the Ghost.js platform named "About" and point the url to `about`. I made this custom page as an alternative to the default `author` page, so any about-ish linkbacks should lead here or to another page. A note about these pages - they will not look pretty when you load them up, just insert your own images & content and you'll be good to go!
-+ The image on the post loop display card is your Post Image.
++ I have included two completely custom pages to escape limitations in the standard `post.hbs`: `page-about` (replacing the standard author page) & `page-work` (to support a basic portfolio). Please feel free to edit their content directly in the HTML.
+  + On adding a page: for example, to add the About page to your theme - simply create a page in the Ghost.js platform named "About" and point the url to `/about`. As this is an alternative to the default `author` page, any `about` backlinks should lead here. 
+  + Another note about these pages: they will not look pretty on a fresh install of this theme - insert your own images & content and you'll be good to go!
++ The image on the post loop display card is your "Post Image".
 + You can edit the navigation links in `partials/navigation.hbs`
-+ The large header abbreviation is your "Blog Description". For the best effect, use a 4 letter acronym.
-+ Much of the scaffolding for this project is borrowed from Casper, but this is not simply a "re-skin" - please be aware of this when scrutinizing the code.
++ The large header abbreviation is your "Blog Description". For the best effect, use a 4 letter acronym. Similarly, the logo is your "Blog Logo" - both of which can be reached in Settings.
++ Much of the scaffolding for this project is borrowed from Casper (this was my first crack at Ghost.js theme development), though this is not simply a "re-skin". Be aware of this when scrutinizing the code.
 
 
 ## Theme Dependencies
