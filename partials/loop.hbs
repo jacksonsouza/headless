@@ -1,7 +1,7 @@
 {{#foreach posts}}
 
 <article class="mdl-card mdl-shadow--2dp demo-card-wide {{post_class}}">
-  <div class="mdl-card__title {{#if image}}" style="background:url({{image}}){{else}}{{/if}}">
+  <div class="mdl-card__title {{#if feature_image}}" style="background:url({{feature_image}}){{else}}{{/if}}">
     <h2 class="mdl-card__title-text">
       <a href="{{url}}">{{{title}}}</a>
       <div class="post-date mdl-card__title-time">{{date format="DD MMMM YYYY"}}</div>

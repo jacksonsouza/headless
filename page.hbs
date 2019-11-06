@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<header class="main-header post-head" style="background-image: url({{image}})">
+<header class="main-header post-head" style="background-image: url({{feature_image}})">
 
 </header>
 
@@ -22,43 +22,10 @@
             <h1 class="post-title">{{title}}</h1>
              {{content}}
 
-            <footer class="post-footer">
-
-            {{! Everything inside the #author tags pulls data from the author }}
-            {{#author}}
-
-                {{#if image}}
-                <figure class="author-image">
-                    <a class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
-                </figure>
-                {{/if}}
-
-            {{/author}}
-
             </footer>
           </div>
         </div>
     </article>
 </main>
-
-<aside class="read-next">
-    {{#next_post}}
-    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
-            <p>{{excerpt words="19"}}&hellip;</p>
-        </section>
-    </a>
-    {{/next_post}}
-    {{#prev_post}}
-    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
-            <p>{{excerpt words="19"}}&hellip;</p>
-        </section>
-    </a>
-    {{/prev_post}}
-</aside>
-
 {{/post}}
 

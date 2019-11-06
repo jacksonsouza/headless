@@ -8,7 +8,7 @@
         </div>
     </div>
 
-    <header class="main-header post-head" style="background-image: url({{image}})">
+    <header class="main-header post-head" style="background-image: url({{feature_image}})">
 
     </header>
 
@@ -41,41 +41,33 @@
                     <div class="about_content-resource-grid mdl-grid">
                         <h4 class="mdl-cell mdl-cell--12-col">Books</h4>
                         <div class="book-resource-img mdl-cell mdl-cell--6-col">
-                            <img src= "../content/images/theme/geb.jpg">
+                            <img src= "../content/images/theme/pdl.jpg">
                         </div>
                         <div class="book-resource-img mdl-cell mdl-cell--6-col">
-                            <img src= "../content/images/theme/a-dance-with.jpg">
+                            <img src= "../content/images/theme/micro.jpg">
                         </div>
                     </div>
 
                     <div class="about_content-resource-grid mdl-grid">
                         <h4 class="mdl-cell mdl-cell--12-col">Music</h4>
                         <div class="mdl-cell mdl-cell--12-col">
-                            <iframe width="560" height="400" src="//www.youtube.com/embed/mb6Jc4juSF8" frameborder="0" allowfullscreen></iframe>
-                            <iframe width="560" height="400" src="//www.youtube.com/embed/5VrDvHeh9sA" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="560" height="400" src="//www.youtube.com/embed/ZoMxDvkPZr8" frameborder="0" allowfullscreen></iframe>
+                            <iframe width="560" height="400" src="//www.youtube.com/embed/CdKgVr53b9s" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
 
                     <div class="about_content-resource-grid mdl-grid">
                         <h4 class="mdl-cell mdl-cell--12-col">Art</h4>
                         <div class="art-resource-img mdl-cell mdl-cell--6-col">
-                            <a href="http://rebel8.com/blogs/giant"><img src= "../content/images/theme/giant.jpg">
+                            <a target="_blank" href="http://rebel8.com/blogs/giant"><img src= "../content/images/theme/giant.jpg">
                         </div>
                         <div class="art-resource-img mdl-cell mdl-cell--6-col">
-                            <a href="https://en.wikipedia.org/wiki/Paul_Laffoley"><img src= "../content/images/theme/laffoley.jpg"></a>
+                            <a target="_blank" href="https://en.wikipedia.org/wiki/Paul_Laffoley"><img src= "../content/images/theme/laffoley.jpg"></a>
                         </div>
                     </div>
 
-                    <h3 class="buffer">"Head Full of Nothing"?</h3>
-                
-                    <iframe width="560" height="24" src="//www.youtube.com/embed/-l1eYwg22V4?start=312&autohide=0" frameborder="0" allowfullscreen></iframe>
 
-                    <p>I remember singing this one with some friends at a festival in Santa Barbara. Here's a <a href="https://www.youtube.com/watch?v=3iPcHt1xUuk">video</a> of the same festival in that, if you squint hard enough, the singer looks just like my father. Dad could pull it off, I have faith.</p>
-
-
-                     <p>A note: The development logs are a peek inside my head, and my brain is certainly no Hemingway. In this regard, I often move quickly from one project to the next so, please excuse spelling and non-coherency. I often throw hasty sketches and example code on these as well, in hope I can one day chuckle at them with my wizard beard and coke bottle glasses. Rest assured that all portfolio and longform items can be held to a higher standard. Thank you & enjoy!</p>
-
-                    <p>This blog is hosted on the Ghost.js platform. The theme is custom and for download <a href="/">here</a>.</p>
+                    <p>This blog is hosted on the Ghost.js platform. The theme is custom and for download <a target="_blank" href="https://github.com/jacksonsouza/headless">here</a>.</p>
                 </div>
 
                 <footer class="post-footer">
@@ -84,24 +76,5 @@
             </div>
         </article>
     </main>
-
-    <aside class="read-next">
-        {{#next_post}}
-        <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-            <section class="post">
-                <h2>{{title}}</h2>
-                <p>{{excerpt words="19"}}&hellip;</p>
-            </section>
-        </a>
-        {{/next_post}}
-        {{#prev_post}}
-        <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-            <section class="post">
-                <h2>{{title}}</h2>
-                <p>{{excerpt words="19"}}&hellip;</p>
-            </section>
-        </a>
-        {{/prev_post}}
-    </aside>
 </div>
 {{/post}}
