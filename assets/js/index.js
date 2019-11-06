@@ -18,23 +18,26 @@
             $nav.fadeIn(delay)
         }
 
-        if(href == "/" ) {
-            setTimeout(function() {
-                window.scrollTo(0, 0);
-                $splash.fadeIn(delay * 2);
-            }, 0);
+      if(href == "/" ) {
+          //naughty, naughty
+          window.location.replace("http://jsouza.co/work")
 
-            // for scroll triggered splash
-            $(window).on("scroll", function() {  
-                 $(window).one("scroll", function() { 
-                    if(window.pageYOffset > 1 && window.innerWidth > 850) {
-                        $splash.fadeOut(delay, function () {
-                            $content.addClass("splash-absent")
-                            $nav.fadeIn(delay)
-                        });
-                    }
-                });
-            });
+          setTimeout(function() {
+              window.scrollTo(0, 0);
+              $splash.fadeIn(delay * 2);
+          }, 0);
+
+          // for scroll triggered splash
+          $(window).on("scroll", function() {
+               $(window).one("scroll", function() {
+                  if(window.pageYOffset > 1 && window.innerWidth > 850) {
+                      $splash.fadeOut(delay, function () {
+                          $content.addClass("splash-absent")
+                          $nav.fadeIn(delay)
+                      });
+                  }
+              });
+          });
         } else {
             $splash.css("display", "none")
             $content.addClass("splash-absent")
